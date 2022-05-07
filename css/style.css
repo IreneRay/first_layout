@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+h3 {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+/* ------------------------------------ */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/* ------------------------------------------- */
+
+/* --------------------------------Навигация----------------- */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 106px;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.header__logo {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oswald';
+    color: inherit;
+
+}
+
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
+
+.menu__item :not(:last-child) {
+    margin: 0px 21px 0px 0px;
+}
+
+.menu__list {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.menu__link {
+    color: #404040;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+.logo__img {
+    height: 70px;
+    width: 155px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.logo__text {
+    font-family: Oswald;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* ------------------------PROMO-----HEADER------------------------ */
+
+
+.ocean {
+    position: relative;
+    width: 1440px;
+    height: 391px;
+    text-align: center;
+    color: white;
+}
+
+
+.ocean_title {
+    position: absolute;
+    text-align: center;
+}
+
+.more {
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    height: 20px;
+    width: 225px;
+    left: 358px;
+    top: 172px;
+
+
+
+}
+
+h1 {
+    position: absolute;
+    color: #FFFFFF;
+    height: 195px;
+    width: 940px;
+    left: 250px;
+    top: 98px;
+    border-radius: 0px;
+
+
+
+}
+
+/* --------------------YELLOW CONTAINER------------------- */
+
+.yellow {
+    position: relative;
+    display: inline-block;
+    background-color: #FEFEC9;
+    text-align: center;
+    width: 1440px;
+    height: 289px;
+    /* margin: 0 auto; */
+}
+
+.yellow_container {
+    position: relative;
+    display: inline-block;
+    height: 75px;
+    width: 940px;
+    left: 0px;
+    top: 0px;
+
+
+}
+
+.yellow_text {
+    position: absolute;
+    font-family: Vollkorn;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 250px 154px 250px;
+}
+
+.yellow_button {
+    position: absolute;
+    color: #47474F;
+    border: 1px solid black;
+    font-family: Vollkorn;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    margin: 188px 674px 81px 685px;
+}
+
+/* -----------------COOPERATION----------------------- */
+
+.cooperation {
+    min-height: 368px;
+    width: 100%;
+    padding: 50px 96px;
+
+}
+
+.cooperation .cooperation_wrapper {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cooperation .cooperation_wrapper .cooperation_item {
+    width: 300px;
+}
+
+.cooperation .cooperation_wrapper .cooperation_item .cooperation_square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #F5F5F5;
+    width: 300px;
+    height: 219px;
+    border-radius: 0%;
+}
+
+.cooperation .cooperation_wrapper .cooperation_item .cooperation_descr {
+    color: #333333;
+    font-family: Vollkorn;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* ---------------------------Projects---------------------- */
+
+.projects {
+    min-height: 1469px;
+    width: 1440px;
+    overflow: hidden;
+    background: #F5F5F5;
+
+}
+
+.projects .projects_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 79px 250px 89px 250px;
+
+}
+
+.projects .projects_wrapper .projects_h2 {
+    display: flex;
+    align-self: center;
+
+    margin: 0px auto;
+}
+
+.projects .projects_wrapper .projects_divider,
+.team .team_wrapper .team_divider {
+    width: 80px;
+    height: 2px;
+    background: #00000017;
+    margin: 43px auto;
+    margin-top: 18px;
+}
+
+.projects .projects_wrapper .projects_wrapper_item .projects_3 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.projects .projects_wrapper .projects_wrapper_item .projects_3 .projects_item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.projects .projects_wrapper .projects_item .projects_text {
+    background-color: #FFFFFF;
+}
+
+/* ----------------------TEAM--------------------------- */
+.team {
+    min-height: 1469px;
+    width: 1440px;
+    overflow: hidden;
+    background: #E5E5E5;
+}
+
+.team .team_wrapper {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.team .team_wrapper .team_item {
+    display: block;
+
+}
+
+.team_img {
+    width: 220px;
+    height: 220px;
+}
+
+.team_group_icons {
+    display: block;
+    
+
+}

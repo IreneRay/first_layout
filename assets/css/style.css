@@ -1,0 +1,10 @@
+.promo__container {
+    position: relative;
+    max-width: 1440px;
+    max-height: 391px;
+}
+
+.text,
+.more {
+    position: absolute;
+}
