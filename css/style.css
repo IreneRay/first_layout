@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -41,7 +42,7 @@ h3 {
 /* --------------------------------Навигация----------------- */
 .header {
     position: absolute;
-    width: 100%;
+    width: 1440px;
     top: 0;
     left: 0;
     z-index: 50;
@@ -52,6 +53,7 @@ h3 {
     min-height: 106px;
     align-items: center;
     background-color: #FFFFFF;
+    padding: 0 100px;
 }
 
 .header__logo {
@@ -64,6 +66,7 @@ h3 {
 
 .header__menu {
     margin: 0px 0px 0px 133px;
+    margin-left: auto;
 }
 
 @media (max-width: 992px) {
@@ -78,7 +81,7 @@ h3 {
     }
 }
 
-.menu__item :not(:last-child) {
+.menu__item:not(:last-child) {
     margin: 0px 21px 0px 0px;
 }
 
@@ -86,6 +89,7 @@ h3 {
     display: flex;
     text-decoration: none;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .menu__link {
@@ -318,8 +322,8 @@ h1 {
 }
 
 .team .team_wrapper .team_item {
-    display: block;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .team .team_wrapper .team_item_group {
@@ -342,4 +346,10 @@ h1 {
 .team .team_wrapper .team_h2 {
     display: flex;
     flex-direction: column;
+}
+
+.team .team_wrapper .team_item .team_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
