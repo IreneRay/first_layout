@@ -311,6 +311,7 @@ h1 {
 
 .team .team_wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
 
@@ -321,6 +322,12 @@ h1 {
 
 }
 
+.team .team_wrapper .team_item_group {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .team_img {
     width: 220px;
     height: 220px;
@@ -328,6 +335,11 @@ h1 {
 
 .team_group_icons {
     display: block;
-    
 
+
+}
+
+.team .team_wrapper .team_h2 {
+    display: flex;
+    flex-direction: column;
 }
