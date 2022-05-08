@@ -30,11 +30,14 @@ h3 {
 
 
 /* ------------------------------------ */
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    /* display: flex;
-    flex-direction: column; */
+
+@media screen (min-width) {
+    .wrapper {
+        min-height: 100%;
+        overflow: hidden;
+        /* display: flex;
+        flex-direction: column; */
+    }
 }
 
 /* ------------------------------------------- */
@@ -119,98 +122,99 @@ h3 {
 
 /* ------------------------PROMO-----HEADER------------------------ */
 
+@media screen (min-width: 499px) (max-width:1024px) {
 
-.ocean {
-    position: relative;
-    width: 1440px;
-    height: 391px;
-    text-align: center;
-    color: white;
+    ≈ .ocean {
+        position: relative;
+        text-align: center;
+        background: url('../img/main_pic.png') center/cover no-repeat;
+        /* background-image: url('../img/main_pic.png');
+        background-size: cover; */
+        width: 1440px;
+        height: 391px;
+        padding: 80px;
+        color: white;
+        /* height ??? убрать ???? */
+    }
 }
 
-
 .ocean_title {
-    position: absolute;
+
     text-align: center;
+    margin-top: 105px;
+}
+
+.ocean .container .ocean_divider {
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 28px;
 }
 
 .more {
-    position: absolute;
     text-align: center;
     color: #FFFFFF;
-    height: 20px;
-    width: 225px;
-    left: 358px;
-    top: 172px;
-
-
-
+    margin-top: 72px;
 }
 
-h1 {
-    position: absolute;
+/* h1 {
     color: #FFFFFF;
-    height: 195px;
-    width: 940px;
-    left: 250px;
-    top: 98px;
     border-radius: 0px;
-
-
-
-}
+} */
 
 /* --------------------YELLOW CONTAINER------------------- */
 
 .yellow {
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
+
     background-color: #FEFEC9;
     text-align: center;
     width: 1440px;
     height: 289px;
+    padding: 60px 250px;
     /* margin: 0 auto; */
 }
 
-.yellow_container {
-    position: relative;
-    display: inline-block;
-    height: 75px;
-    width: 940px;
-    left: 0px;
-    top: 0px;
+/* .yellow_container { */
+/* position: relative; */
+/* display: inline-block; */
+/* height: 75px; */
+/* width: 940px; */
 
-
-}
+/* } */
 
 .yellow_text {
-    position: absolute;
     font-family: Vollkorn;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    letter-spacing: 0em;
-    justify-content: center;
+    margin: 60px auto;
+    /* justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 60px 250px 154px 250px;
+    text-align: center; */
+    /* margin: 60px 250px 154px 250px; */
 }
 
 .yellow_button {
-    position: absolute;
     color: #47474F;
+    background-color: #FEFEC9;
     border: 1px solid black;
     font-family: Vollkorn;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    justify-content: center;
-    margin: 188px 674px 81px 685px;
+    padding: 15px;
+    margin-top: 60px;
+    cursor: pointer;
+    outline: none;
 }
 
+.yellow_button:hover {}
+
 /* -----------------COOPERATION----------------------- */
+@media screen(min-width:) {}
 
 .cooperation {
     min-height: 368px;
@@ -307,7 +311,7 @@ h1 {
 
 /* ----------------------TEAM--------------------------- */
 .team {
-    min-height: 1469px;
+    height: 478px;
     width: 1440px;
     overflow: hidden;
     background: #E5E5E5;
@@ -353,3 +357,81 @@ h1 {
     flex-direction: column;
     text-align: center;
 }
+
+/* ------------------------------------Feedback----------------------------- */
+.feedback {
+    background: #F5F5F5;
+    width: 1440px;
+    height: 511px;
+
+}
+
+.feedback_icon {
+    width: 62px;
+    height: 62px;
+    margin: 69px;
+    margin-left: 689px;
+}
+
+.feedback_text {
+    color: #333333;
+    font-family: Vollkorn;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+.feedback_photo {
+    height: 64px;
+    width: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback_name {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ABABAB;
+}
+
+.feedback_divider {
+    color: #000000;
+    height: 215px;
+    width: 2px;
+
+}
+
+.feedback_block {
+    /* max-width: 338px; */
+    /* max-height: 198px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    padding-top: 30px;
+    padding: right 30px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+
+.feedback_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------Contact------------------------- */
+
+.contact {
+    width: 1440px;
+    height: 517px;
+    background-image: url('../img/main_pic2.png');
